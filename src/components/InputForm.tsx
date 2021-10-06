@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
 
+import {IForm} from '../helpers/dataTypes'
+
 function InputForm() {
-  const [showForm, setShowForm] = useState(true)
-  const [formData, setFormData] = useState({
+
+  const [showForm, setShowForm] = useState<boolean>(true)
+  const [formData, setFormData] = useState<IForm>({
     taskName: '',
     taskDetails: '',
     taskCompleted: false
-
   })
 
   function handleShowClick(): void {

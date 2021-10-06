@@ -1,6 +1,5 @@
 import React from 'react'
 
-import './App.css'
 import InputForm from './components/InputForm'
 import ItemsList from './components/ItemsList'
 

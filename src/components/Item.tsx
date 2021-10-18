@@ -1,15 +1,16 @@
 import React from 'react'
+import Card from '@mui/material/Card'
 
 import {IForm} from '../helpers/dataTypes'
 
 function Item(props: IForm) {
   const {taskName, taskDetails, taskCompleted} = props
   return (
-    <div className='item'>
+    <Card variant="outlined">
       <p>Name: {taskName}</p>
       <p>Details: {taskDetails}</p>
       <p>Completed: {taskCompleted}</p>
-    </div>
+    </Card>
   )
 }
 
